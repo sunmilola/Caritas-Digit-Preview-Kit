@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Caritas — Leadership Preview & Digital Review Kit</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f8f7f4; --ink:#222; --muted:#616161; --gold:#b78b2f; --sand:#efe9dc; --card:#fff; --line:#d9d0bd; --navbg:#ffffff;
+    --accent:#e67e22; --nav:#2c3e50;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);}
+  body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 20px}
+  .topbar{position:sticky;top:0;z-index:50;background:var(--navbg);border-bottom:1px solid #eee}
+  .topnav{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:10px 12px}
+  .topnav a{font-size:14px;text-decoration:none;color:var(--nav);background:#fff;border:1px solid #eee;padding:8px 12px;border-radius:999px}
+  .hero{border:1px solid #eee;border-radius:20px;padding:56px 42px;background:linear-gradient(180deg,#fff,var(--sand));box-shadow:0 12px 28px rgba(0,0,0,.06)}
+  .eyebrow{letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;font-size:12px}
+  h1,h2,h3{font-family:'Playfair Display',serif}
+  h1{font-size:48px;line-height:1.1;margin:8px 0 0}
+  .subtitle{font-size:18px;color:#3a3a3a;margin-top:8px}
+  .tagline{color:var(--muted);text-align:center;margin-top:12px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+  .btn{display:inline-block;background:#222;color:#fff;padding:12px 18px;border-radius:12px;font-weight:600;text-decoration:none}
+  .btn.alt{background:var(--gold);color:#111}
+  .btn.accent{background:var(--accent);color:#fff}
+  .rule{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);border:none;margin:28px 0}
+  .section{margin:26px 0}
+  .card{background:var(--card);border:1px solid #eee;border-radius:16px;padding:22px;box-shadow:0 8px 22px rgba(0,0,0,.05)}
+  h2{font-size:30px;margin:4px 0 10px}
+  h3{font-size:22px;margin:10px 0 8px}
+  p{margin:10px 0}
+  .quote{border-left:4px solid var(--gold);padding:10px 16px;background:#fffdfa;color:#4a3e25;border-radius:8px;font-style:italic}
+  .kicker{color:var(--muted);font-size:14px}
+  .grid{display:grid;gap:22px}
+  @media(min-width:900px){ .grid-2{grid-template-columns:1.15fr .85fr} .grid-3{grid-template-columns:repeat(3,1fr)}}
+  .table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid #eee;border-radius:12px;overflow:hidden}
+  .table th,.table td{padding:14px;vertical-align:top;background:#fff;text-align:left}
+  .table thead th{background:#f6f2e8;color:#4a3e25;font-weight:700}
+  .footer{color:var(--muted);font-size:14px;text-align:center;margin:40px 0 10px}
+  .placeholder{display:flex;align-items:center;justify-content:center;height:140px;background:#faf7ef;border:1px dashed #d8cdb5;border-radius:12px;color:#9a8762}
+  .callout{background:#fffdfa;border:1px solid #f0e7d4;border-radius:12px;padding:14px;text-align:center;color:#4a3e25;font-weight:600}
+  .note{font-size:13px;color:#6a6a6a}
+  .video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;border:1px solid #eee;background:#000}
+  .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:14px}
+  .kit-items{list-style:none;padding-left:0;margin:0}
+  .kit-items li{margin-bottom:10px}
+  .kit-items li a{text-decoration:none;color:var(--accent);font-weight:600}
+  .kit-items li::before{content:"📘 ";}
+  .banner{background:#2c3e50;color:#fff;border-radius:16px;padding:22px}
+  .banner h2{color:#fff;margin-top:0}
+  .pill{display:inline-block;border:1px solid #fff2; padding:6px 10px;border-radius:999px;margin-right:8px;font-size:12px}
+  @media print{
+    .topbar,.cta{display:none !important}
+    .wrap{padding:24px}
+    .section{page-break-inside:avoid}
+    .pagebreak{page-break-before:always}
+    a{text-decoration:none;color:inherit}
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topnav">
+      <a href="#cover">Cover</a>
+      <a href="#letter">Founder’s Letter</a>
+      <a href="#vision">Vision</a>
+      <a href="#framework">Framework</a>
+      <a href="#samples">Samples</a>
+      <a href="#leaders">Leader Resources</a>
+      <a href="#stories">Stories</a>
+      <a href="#connect">Connect</a>
+      <a href="#digital">Digital Review Kit</a>
+      <a href="#closing">Closing</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section id="cover" class="hero section">
+      <div class="eyebrow">Leadership Preview Kit</div>
+      <h1>Caritas</h1>
+      <p class="subtitle"><strong>Loving God with everything you’ve got.</strong></p>
+      <hr class="rule"/>
+      <p class="subtitle">A 40-Day Journey to the Heart of God</p>
+      <p class="tagline">“Come live the Caritas Experience.”</p>
+      <div class="placeholder" style="margin-top:18px"> </div>
+      <div class="cta">
+        <a class="btn" href="#letter">Read the Letter</a>
+        <a class="btn alt" href="#framework">Explore the Resources</a>
+        <a class="btn accent" href="#digital">Open Digital Review Kit</a>
+      </div>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <section id="letter" class="section card">
+      <h2>Dear Pastor,</h2>
+      <p>There are moments in ministry when we realize that what our people need most isn’t another program or event — it’s an encounter. An encounter with the living God whose love is not measured, but poured out without restraint.</p>
+      <p><em>Caritas</em> was born out of that longing. A longing to see the Church fall in love with God again — not just serve Him faithfully, but love Him deeply. To move from obligation to adoration. From striving to resting. From doing for God, to being with God.</p>
+      <p class="quote"><strong>The heart of Caritas is simple:</strong> <em>We have been loved with reckless mercy — and our only fitting response is reckless abandon.</em></p>
+      <p>Through <em>Caritas: Loving God with Everything You’ve Got</em> and <em>The Caritas Manifesto: A 40-Day Journey to the Heart of God</em>, we invite believers to rediscover what it means to live <em>from</em> love, not <em>for</em> it. These resources were created not as curriculum, but as catalysts — to help stir the flame of first love in individuals, small groups, and entire congregations.</p>
+      <p>Our prayer is that the Caritas Experience becomes a sacred rhythm in your community — a way of being where worship flows from delight, not duty, and where your people learn to rest again in the Father’s embrace.</p>
+      <p>We’d be honored to walk with you as your church rediscovers the joy of loving God with everything you’ve got.</p>
+      <p><strong>— Oladele Adeleye</strong><br/>Founder, <em>Caritas</em></p>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <section id="vision" class="section card">
+      <h2>What Is the Caritas Experience?</h2>
+      <p>Caritas is more than a word — it’s a heartbeat. It’s the rhythm of a life wholly given to Love.</p>
+      <p>To live the Caritas Experience is to rest in the arms of the One who knows us, loves us, and holds us. To taste the Father’s embrace — even for a moment — is to be changed forever.</p>
+      <p>Caritas says, “God, You have loved me with reckless mercy. I will love You with reckless abandon.” This is not a slogan; it’s a surrender. It’s moving from counting the cost to offering our whole selves: <em>“Take all of me.”</em></p>
+      <p>The Caritas Experience is a life shaped by divine love — a way of being where worship flows not from duty, but from delight; where identity is rooted not in what we do, but in whose we are; where every season — joy, sorrow, silence, celebration — becomes an invitation back to the embrace of reckless mercy.</p>
+      <div class="callout">“Come live the Caritas Experience.”</div>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <section id="framework" class="section card">
+      <h2>Two Paths, One Heartbeat</h2>
+      <p class="kicker">Resources to help your church live the Caritas Experience.</p>
+      <table class="table">
+        <thead>
+          <tr><th>Resource</th><th>Purpose</th><th>Format</th><th>Ideal For</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Caritas: Loving God with Everything You’ve Got</strong></td>
+            <td>12-week teaching &amp; reflection series that forms the foundation of the Caritas Experience.</td>
+            <td>Book + Group Study Guide</td>
+            <td>Sermon series, small groups, or spiritual formation courses.</td>
+          </tr>
+          <tr>
+            <td><strong>The Caritas Manifesto: 40-Day Journey</strong></td>
+            <td>A guided journey to the heart of God. Daily reflections, personal workbook, and leader’s guide.</td>
+            <td>Devotional + Journal + Leader Tools</td>
+            <td>Church-wide campaigns, Lent/Advent, or leadership retreats.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <section id="samples" class="section grid grid-2">
+      <div class="card">
+        <h3>Sample — Caritas: Loving God with Everything You’ve Got</h3>
+        <p><strong>Excerpt — “From Duty to Delight”</strong></p>
+        <p>Love grows where it is received. The journey of wholehearted devotion does not begin with our effort; it begins with God’s embrace. When we discover we are loved with reckless mercy, worship ceases to be a task and becomes a response.</p>
+        <p>In pastoral life, we are tempted to measure devotion by output — services led, studies completed, boxes checked. But love is not measured, it is given. The Caritas Experience invites us to live from a different center: to sit, to listen, to be held — and then to move outward in the strength of being loved.</p>
+        <p class="quote">Scripture Callout: “We love because He first loved us.” (1 John 4:19)</p>
+      </div>
+      <div class="card">
+        <h3>Sample — The Caritas Manifesto: 40-Day Journey</h3>
+        <p><strong>Day 7 — Held</strong></p>
+        <p><strong>Scripture:</strong> “The eternal God is your refuge, and underneath are the everlasting arms.” (Deut. 33:27)</p>
+        <p><strong>Reflection:</strong> Where have you sensed the Father’s embrace this week? How might He be inviting you to rest rather than strive?</p>
+        <p><strong>Practice:</strong> Five minutes of stillness. Breathe slowly. With each breath, pray: “Loved… Held…” Let the words fall from your head into your heart.</p>
+        <p><strong>Prayer:</strong> Father, I rest in Your arms. Teach my soul to live from Your love.</p>
+      </div>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <section id="leaders" class="section card">
+      <h2>Leader Resources Snapshot</h2>
+      <ul>
+        <li><strong>Leader Guide Overview:</strong> session flows, timings, and facilitation cues.</li>
+        <li><strong>Sample Teaching Outline:</strong> big idea, scriptures, and response moment.</li>
+        <li><strong>Group Discussion Format:</strong> simple, repeatable rhythm (Word — Wonder — Worship — Work).</li>
+        <li><strong>Video / Lecture Links:</strong> short teaching segments to support leaders.</li>
+        <li><strong>Worship Integration Ideas:</strong> ways to blend prayer, scripture, and sung worship into each session.</li>
+      </ul>
+      <div class="callout">Everything you need to lead your church into a 40-day encounter with divine love.</div>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <section id="stories" class="section card">
+      <h2>Stories &amp; Endorsements</h2>
+      <p class="quote">“Stories are coming in from churches experiencing renewal through the Caritas Experience.”</p>
+      <ul>
+        <li>“Our small groups rediscovered joy in worship. Caritas gave us language for love.” — <em>Local Church Leader</em></li>
+        <li>“This journey helped our people rest in God again — less striving, more presence.” — <em>Senior Pastor</em></li>
+        <li>“The Leader Guide made it simple to implement across multiple groups.” — <em>Discipleship Pastor</em></li>
+      </ul>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <section id="connect" class="section card">
+      <h2>Join the Movement</h2>
+      <p>We’d love to help you lead your people into a deeper encounter with God’s love. Download more resources, or schedule a conversation with our team.</p>
+      <p><strong>Website:</strong> yourwebsite.com/caritas</p>
+      <p><strong>Email:</strong> pastors@caritasmovement.org</p>
+      <div class="placeholder">QR Code • Link to short video or booking page</div>
+      <p class="note">Tip: replace the placeholder with a real QR image linking to your landing page or calendar.</p>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <!-- Digital Review Kit merged -->
+    <section id="digital" class="section banner">
+      <h2 style="margin-bottom:6px">CARITAS MANIFESTO — Digital Review Kit</h2>
+      <p class="pill">From Saved to Transformed</p>
+      <p>We’ve mastered getting people saved. But are we making disciples? <strong>CARITAS MANIFESTO</strong> is a movement — not another program — designed to help believers move from decision to devotion. This digital kit gives you everything you need to explore the journey.</p>
+      <div class="video-wrapper" style="margin-top:16px">
+        <iframe src="https://www.youtube.com/embed/TK-9XMRlt00" title="CARITAS MANIFESTO Teaser" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <h3 style="margin-top:0">What’s Inside</h3>
+        <ul class="kit-items">
+          <li><a href="Caritas-Manifesto-Book-Sample.html" target="_blank">Interactive book preview</a></li>
+          <li><a href="CARITAS-MANIFESTO-journal.html" target="_blank">Personal Journal</a></li>
+	 <li><a href="https://www.youtube.com/embed/85x5ryLwwRE?autoplay=1" target="_blank">🎥 Watch the Intro Video</a></li>
+          <li><a href="quick-start.html" target="_blank">Quick-start guide for launching a small group</a></li>
+          <li><a href="faq.html" target="_blank">FAQ for pastors and leadership teams</a></li>
+        </ul>
+        <div class="cta">
+          <a class="btn accent" href="kit.html" target="_blank">Access the Kit Now</a>
+        </div>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <h3 style="margin-top:0">Why It Matters</h3>
+        <p><strong>❤️ Heart-first discipleship:</strong> Transformation, not just information</p>
+        <p><strong>🤝 Community-centered:</strong> Real connection through guided small groups</p>
+        <p><strong>🔁 Multiplication DNA:</strong> Every participant can lead the next round</p>
+        <p><strong>🕊️ Sustainable rhythms:</strong> Lifelong spiritual practices in 40 days</p>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <h3 style="margin-top:0">Bonus Offer</h3>
+        <p>Want to lead a group or request physical copies?</p>
+        <p>Email us at <strong>info@caritasmanifesto.com</strong> with subject line:<br><em>“Review Copy Request – [Your Church Name]”</em></p>
+      </div>
+    </section>
+
+    <div class="pagebreak"></div>
+
+    <section id="closing" class="section hero">
+      <h2 style="text-align:center;margin-top:0">Come experience a love too fierce to be contained.</h2>
+      <h2 style="text-align:center;margin-top:8px">Come live the Caritas Experience.</h2>
+      <p class="tagline">© Caritas • Loving God with everything you’ve got.</p>
+    </section>
+
+  </div>
+</body>
+</html>
